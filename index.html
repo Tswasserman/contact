@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Professional Contacts</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-image: url(./contact1.png); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .contact-container {
-            background-color: #97e2f8;
-            border: 1px solid #000000;
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
+            background-color: rgba(207, 204, 204, 0.9);
+            border: 1px solid #dcdcdc;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 16px; /* Rounded corners */
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .contact-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
         }
 
-        li {
-            margin: 10px 0;
+        .contact-info {
+            margin-bottom: 20px;
         }
 
-        a {
+        .contact-info h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 18px;
+            color: #666666;
+        }
+
+        .contact-info a {
+            color: #007bff;
             text-decoration: none;
-            color: #0011ff;
+        }
+
+        .location {
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="contact-container">
-        <h1>My Contacts Details</h1>
-        <ul>
-            <li><a href="tel:+27658699522">Contact Number:0658699522</a></li>
-            <li><a href="mailto:tswasserman00@gmail.com">E-mail: tswasserman00@gmail.com</a></li>
-            <li>Capetown, Western Cape, South Africa</li>
-        </ul>
+        <h1>Contact Information</h1>
+        
+        <div class="contact-info">
+            <h3>Phone:</h3>
+            <p><a href="tel:+27658699522">0658699522</a></p>
+
+        </div>
+        
+        <div class="contact-info">
+            <h3>Email:</h3>
+            <p><a href="mailto:tswasserman00@gmail.com">tswasserman00@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info location">
+            <h3>Location:</h3>
+            <p>Capetown, Western Cape, South Africa</p>
+        </div>
     </div>
 </body>
 </html>
-
